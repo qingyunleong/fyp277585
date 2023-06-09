@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #283044;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+nav .nav-content {
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+}
+
+.nav-content .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-content .nav-links li {
+    list-style: none;
+    margin: 8px;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a img {
+    display: flex;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.nav-links li a:hover {
+    color: #fff;
+}
+
+.photo {
+    height: 100%;
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+.main {
+    height: 100%;
+    width: 1100px;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.w3-grid-template {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 5px 5px 5px 5px;
+}
+
+.w3-grid-template .box {
+    background: #f1f1fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 25px;
+    border: 5px solid #ffffff;
+}
+
+.box .quote i {
+    margin-top: 10px;
+    font-size: 45px;
+    color: #17c0eb
+}
+
+.w3-grid-template .box .image {
+    margin: 10px 0;
+    height: 150px;
+    width: 150px;
+    background: #1d1b31;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.box .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.box p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.box .title {
+    margin: 10px 0 3px 0;
+    color: #1d1b31;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.box .level {
+    color: #413e71;
+}
+
+.btns {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btns button {
+    background: #1d1b31;
+    width: 100%;
+    padding: 9px 0px;
+    outline: none;
+    border: 2px solid #1d1b31;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1d1b31;
+    transition: all 0.3s linear;
+}
+
+.btns button:first-child {
+    background: #1d1b31;
+    margin-right: 5px;
+}
+
+.btns button:last-child {
+    color: #fff;
+    margin-left: 5px;
+}
+
+.btns button:first-child:hover {
+    background: none;
+    color: #fff;
+}
+
+.btns button:hover {
+    color: #fff;
+}

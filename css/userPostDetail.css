@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #283044;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+nav .nav-content {
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+}
+
+.nav-content .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-content .nav-links li {
+    list-style: none;
+    margin: 8px;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li img {
+    display: flex;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.nav-links li a:hover {
+    color: #fff;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 6px;
+    color: #283044;
+}
+
+.text {
+    text-align: justify;
+    padding: 40px 80px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    font-family: Arial;
+    padding: 10px;
+    background: #f5f6fa;
+    margin: 0 auto;
+}
+
+.feeds {
+    background: #ffffff;
+    border-radius: 10px;
+    max-width: 800px;
+    flex-basis: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin: 0 auto;
+}
+
+.feeds .feed {
+    font-size: .8rem;
+    line-height: 1.6;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.feeds .feed .head {
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.feeds .feed .user {
+    display: flex;
+    gap: 1rem;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    padding-bottom: 2%;
+}
+
+.feeds .feed a {
+    color: #000000;
+    margin: auto;
+}
+
+.feeds .feed .edit {
+    font-size: 24px;
+    margin: auto;
+}
+
+.feeds .feed .user .image {
+    display: flex;
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin-left: 20%;
+}
+
+.feeds .feed .user .info {
+    font-size: 18px;
+    font-weight: 500;
+    width: 90%;
+    margin: auto;
+    margin-left: 1%;
+}
+
+.feeds .feed-phots {
+    width: 70%;
+    height: 70%;
+    border-radius: 0;
+    overflow: hidden;
+    margin: 1rem 2.5rem;
+    display: flex;
+    aspect-ratio: 1/1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.feeds .feed-phots.hidden {
+    display: none;
+}
+
+.feeds .feed-phots .pimg {
+    height: 100%;
+    margin: 5px 0;
+}
+
+.feeds .feed .title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 6px;
+}
+
+.feeds .feed .description {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 6px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.feeds .feed .delete_button {
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 2.5rem;
+    text-align: right;
+    margin-bottom: 6px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    color: #a6a7ab;
+}
+
+.feeds .feed .delete_button a {
+    color: #a6a7ab;
+}
+
+.feeds .feed .comment {
+    font-size: 15px;
+    font-weight: normal;
+    margin-left: 2.5rem;
+    color: #a6a7ab;
+}
+
+
+.feeds .feed .column {
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.feeds .feed .userc {
+    display: flex;
+    gap: 1rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.feeds .feed .userc .image {
+    display: flex;
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.feeds .feed .userc .info {
+    font-size: 15px;
+    font-weight: 500;
+    width: 90%;
+    color: #a6a7ab;
+}
+
+.feeds .feed .userc .info small {
+    display: flex;
+    font-size: 12px;
+    color: #000000;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.feeds .feed .headComment {
+    /* display: flex; */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: transparent;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feeds .feed .userComment {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 2%;
+}
+
+.feeds .feed .userComment .image {
+    display: flex;
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
+
+.feeds .feed .userComment textarea {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    min-height: 50px;
+    margin-top: .7rem;
+    white-space: pre-wrap;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.button-39 {
+    background-color: #d1d8e6;
+    margin-right: 20px;
+    margin: auto;
+    margin-bottom: 0;
+    height: 35px;
+    border: 1px solid rgb(209, 213, 219);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .5rem .5rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.feeds .feed .delete_buttona {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+    margin-bottom: 6px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    color: #a6a7ab;
+}
+
+.feeds .feed .delete_buttona a i.fa-trash {
+    color: #a6a7ab;
+}
+
+.nocomment {
+    margin-left: 4rem;
+    display: flex;
+    font-size: 15px;
+    color: #4f4f4f;
+}
+
+.feeds .feed .end p {
+    text-align: center;
+    color: #a8a8a8;
+    font-size: 12px;
+}

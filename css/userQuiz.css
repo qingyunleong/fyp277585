@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #283044;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+nav .nav-content {
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+}
+
+.nav-content .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-content .nav-links li {
+    list-style: none;
+    margin: 8px;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li img {
+    display: flex;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.nav-links li a:hover {
+    color: #fff;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 6px;
+    color: #283044;
+}
+
+.text {
+    text-align: justify;
+    padding: 40px 80px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    font-family: Arial;
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.feed {
+    margin-top: 40px;
+    background: #283044;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.main .feed a {
+    color: #000000;
+    margin: auto;
+}
+
+.main .feed .edit {
+    font-size: 24px;
+    margin: auto;
+}
+
+.w3-grid-template {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding: 20px;
+}
+
+.category {
+    background: #d1d8e6;
+    border-radius: 10px;
+    flex-basis: 100%;
+}
+
+.categorydetail {
+    text-align: center;
+}
+
+.click {
+    color: #ffffff;
+    bottom: 0;
+    padding-bottom: 2%;
+}
+
+h1 {
+    color: #283044;
+}
+
+.history {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.history a {
+    max-width: 250px;
+    width: auto;
+}
+
+.button-35 {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s, -webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+    max-width: 250px;
+    width: auto;
+}

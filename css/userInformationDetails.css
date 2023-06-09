@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #283044;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+nav .nav-content {
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+}
+
+.nav-content .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-content .nav-links li {
+    list-style: none;
+    margin: 8px;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a img {
+    display: flex;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.nav-links li a:hover {
+    color: #fff;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 6px;
+    color: #283044;
+}
+
+.title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.title a {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #a0a0a0;
+}
+
+.ltitle {
+    font-size: 50px;
+    margin-bottom: 6px;
+    color: #1d1b31;
+}
+
+.image img {
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btitle {
+    font-size: 60px;
+    margin-bottom: 6px;
+    color: #1d1b31;
+    font-family: 'Lora', serif;
+}
+
+.ctitle {
+    font-size: 35px;
+    margin-bottom: 6px;
+    color: #1d1b31;
+}
+
+.desc {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #808082;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.title1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #1d1b31;
+}
+
+.desc1 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #808082;
+    text-align: justify;
+    text-justify: inter-word;
+}

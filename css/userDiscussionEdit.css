@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #283044;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+nav .nav-content {
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+}
+
+.nav-content .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-content .nav-links li {
+    list-style: none;
+    margin: 8px;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a img {
+    display: flex;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.nav-links li a:hover {
+    color: #fff;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 6px;
+    color: #283044;
+}
+
+.text {
+    text-align: justify;
+    padding: 40px 80px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    font-family: Arial;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main a {
+    color: #000000;
+    margin: auto;
+    margin-left: 10%;
+}
+
+.container {
+    width: 500px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+    border: 3px solid #a8b6d1;
+    margin: 0 auto;
+}
+
+.container.active {
+    align-items: center;
+    visibility: visible;
+}
+
+.container .wrapper {
+    width: 1000px;
+}
+
+.container .wrapper section {
+    width: 500px;
+    background: #fff;
+}
+
+.container .post {
+    transition: margin-left 0.18s ease;
+}
+
+.container.active .post {
+    margin-left: -500px;
+}
+
+.post header {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 17px 0;
+    text-align: center;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.post .close {
+    color: #aaaaaa;
+    float: right;
+    width: 7%;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.post .close:hover,
+.post .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.post form {
+    margin: 20px 25px;
+}
+
+.post form .content {
+    display: flex;
+    align-items: center;
+}
+
+.post form .content img {
+    display: flex;
+    width: 3rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.post form .content .details {
+    margin: -3px 0 0 15px;
+    color: #626262;
+}
+
+.post form .title {
+    font-size: 22px;
+    min-height: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+}
+
+form .content .details p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .postPhoto {
+    border-radius: 10px;
+    border: 1px solid rgb(227, 227, 227);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+form .postPhoto .avatar_image {
+    height: 25%;
+    width: 25%;
+    margin: 5px 0;
+}
+
+form .postPhoto input {
+    margin-bottom: 12px;
+}
+
+form :where(textarea, button) {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+form textarea {
+    resize: none;
+    font-size: 18px;
+    margin-top: 30px;
+    min-height: 100px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    white-space: pre-wrap；
+}
+
+form .title::placeholder,
+form textarea::placeholder {
+    color: #858585;
+}
+
+form .title:focus::placeholder,
+form textarea:focus::placeholder {
+    color: #b3b3b3;
+}
+
+form button {
+    height: 53px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #BCC0C4;
+    cursor: no-drop;
+    border-radius: 7px;
+    background: #e2e5e9;
+    transition: all 0.3s ease;
+}
+
+form textarea:valid~button {
+    color: #fff;
+    cursor: pointer;
+    background: #4599FF;
+}
+
+form textarea:valid~button:hover {
+    background: #1a81ff;
+}

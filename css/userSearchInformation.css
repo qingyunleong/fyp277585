@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #283044;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+nav .nav-content {
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+}
+
+.nav-content .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-content .nav-links li {
+    list-style: none;
+    margin: 8px;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li img {
+    display: flex;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.nav-links li a:hover {
+    color: #fff;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 6px;
+    color: #283044;
+}
+
+.text {
+    text-align: justify;
+    padding: 40px 80px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    font-family: Arial;
+    padding: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    background: url("../photo/searchBackground.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .container .box {
+    width: 70%;
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+
+.home .container .box .input-box {
+    position: relative;
+    height: 60px;
+    max-width: 900px;
+    width: 100%;
+    background: #ffffff;
+    margin: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home .container .box .input-box i,
+.home .container .box .input-box .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home .container .box .input-box i {
+    left: 20px;
+    font-size: 30px;
+    color: #707070;
+}
+
+.home .container .box .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+}
+
+.home .container .box .input-box .button {
+    right: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1d1b31;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 6px;
+    background-color: #dddaff;
+    cursor: pointer;
+}
+
+.home .container .box .input-box .button:active {
+    transform: translateY(-50%) scale(0.98);
+}
+
+h3 {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 6px;
+    color: #1d1b31;
+}
+
+.text {
+    text-align: justify;
+    padding: 40px 80px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    height: 100%;
+    place-items: center;
+
+}
+
+.main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.w3-grid-template {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-gap: 20px;
+}
+
+.w3-grid-template .box {
+    background: #f1f1fd;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #080808;
+    text-align: center;
+}
+
+.w3-grid-template .box .image {
+    margin: 10px auto;
+    height: 150px;
+    width: 150px;
+    background: #1d1b31;
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.box p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.box .title {
+    margin: 10px 0 3px 0;
+    color: #1d1b31;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box .title a {
+    color: #1d1b31;
+    text-decoration: none;
+}
+
+.box .title a:hover {
+    text-decoration: underline;
+}
